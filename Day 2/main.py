@@ -51,3 +51,38 @@
 
 
 # 22. Mathematical Operations in Python
+
+# 3 + 5
+# 7 - 4
+# 3 * 2
+# print(type(6 / 3))
+
+# print(100000000000 ** 123456789)
+
+# PEMDAS-LR
+# ()
+# **
+# 8 /
+# + -
+
+# print(3 * (3 + 3) / 3 - 3)
+# -------------------------------------
+
+
+# 23. [Interactive Coding Exercise] BMI Calculator
+
+# 🚨 Don't change the code below 👇
+# height = input("enter your height in m: ")
+# weight = input("enter your weight in kg: ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+# height_float = float(height)
+# weight_float = int(weight)
+
+# bmi_calc = weight_float / (height_float ** 2)
+# print(int(bmi_calc))
+# -------------------------------------
+
+
+# 24. Number Manipulation and F Strings in Python 
