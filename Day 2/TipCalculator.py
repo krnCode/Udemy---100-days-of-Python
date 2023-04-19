@@ -10,6 +10,36 @@
 
 # Write your code below this line 👇
 
+# Greetings message
+startMessage = 'Welcome to the tip calculator!'
+
+print(startMessage)
+
+
+# Get input from the user
+inputBill = input('What was the total bill? ')
+inputTip = input('How much tip would you like to give? 10, 12 or 15? ')
+inputPeople = input('How many people to split the bill? ')
+
+
+# Convert inputs into int/float datatypes
+convertedBill = float(inputBill)
+convertedTip = int(inputTip)
+convertedPeople = int(inputPeople)
+
+
+# Calculations
+billCalculation = (convertedBill / convertedPeople)
+tipCalculation = billCalculation * ((convertedTip / 100) + 1)
+
+
+# Create variable to format 2 decimal numbers
+finalAmount = "{:.2f}".format(tipCalculation)
+
+
+# Show result to user
+print(f"Each person should pay: ${finalAmount}")
+
 
 
 # https://replit.com/@appbrewery/tip-calculator-end
