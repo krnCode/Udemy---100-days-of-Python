@@ -1,3 +1,6 @@
+# Course Project - Band Name Generator
+# https://replit.com/@appbrewery/band-name-generator-start?v=1
+
 #1. Create a greeting for your program.
 print("Hello! Welcome to the Band Name Generator!\nFollow the steps to generate your band name.")
 

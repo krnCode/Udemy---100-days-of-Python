@@ -86,3 +86,46 @@
 
 
 # 24. Number Manipulation and F Strings in Python 
+
+# print(round(8 / 3, 2))
+
+# print(8 // 3)
+# print(type(8 // 3))
+# print(type(8 / 3))
+
+# result = 4 / 2
+# result /= 2
+# print(result)
+
+# score = 0
+
+# User scores a point
+
+# score += 1
+# print(score)
+
+# score = 8
+# height = 1.8
+# isWinning = True
+
+# # f-string
+# print(f'your score is {score}, your height is {height}, you are winning is {isWinning}')
+# -------------------------------------
+
+
+# 25. [Interactive Coding Exercise] Life in Weeks
+
+# 🚨 Don't change the code below 👇
+# age = input("What is your current age? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+# ageConverted = int(age)
+# yearsLeft = 90 - ageConverted
+
+# days = yearsLeft * 365
+# months = yearsLeft * 12
+# weeks = yearsLeft * 52
+
+# print(f"You have {days} days, {weeks} weeks, and {months} months left.")
+# -------------------------------------
