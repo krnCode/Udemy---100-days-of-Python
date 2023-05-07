@@ -8,12 +8,13 @@ The course is divided into 100 days, with each day covering a different topic or
 
 ## Course Structure
 Each day's code and notes are stored in a separate folder in this repository. The folder structure is as follows:
-day-1/
-  |- main.py
-  |- project.py
-day-2/
-  |- main.py
-  |- project.py
+
+day-1/  
+  |- main.py  
+  |- project.py  
+day-2/  
+  |- main.py  
+  |- project.py  
 ...
 
 ## Acknowledgments
