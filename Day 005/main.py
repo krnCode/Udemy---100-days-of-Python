@@ -55,3 +55,46 @@
 # -------------------------------------
 
 
+# 53. for loops and the range() function
+
+# For Loop with range
+
+# for number in range(1, 11, 3):
+#     print(number)
+
+# total = 0
+
+# for number in range(1, 101):
+#     total += number
+
+# print(total)
+# -------------------------------------
+
+
+# 54. [Interactive Coding Exercise] Adding Even Numbers
+
+# even_total = 0
+
+# for number in range(0, 101):
+#     if number % 2 == 0:
+#         even_total += number
+
+# print(even_total)
+# -------------------------------------
+
+
+# 55. [Interactive Coding Exercise] The FizzBuzz Job Interview Question
+
+# Fizz Buzz Game
+
+# for number in range(1, 101):
+#     if number % 3 == 0 and number % 5 == 0:
+#         print("FizzBuzz")
+#     elif number % 3 == 0:
+#         print("Fizz")
+#     elif number % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(number)
+# -------------------------------------
+        
