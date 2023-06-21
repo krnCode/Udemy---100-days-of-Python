@@ -1,0 +1,30 @@
+# 99. Functions with Outputs
+
+# Functions with outputs
+# def format_name(f_name, l_name):
+#     formated_f_name = f_name.title()
+#     formated_l_name = l_name.title()
+
+#     return f"{formated_f_name} {formated_l_name}"
+
+
+# print(format_name("pAuLO", "santAna"))
+# -------------------------------------
+
+
+# 100. Multiple return values
+
+
+# def format_name(f_name, l_name):
+#     if f_name == "" or l_name == "":
+#         return
+#     formated_f_name = f_name.title()
+#     formated_l_name = l_name.title()
+
+#     return f"Result: {formated_f_name} {formated_l_name}"
+
+
+# print(
+#     format_name(input("What is your first name? "), input("What is your last name? "))
+# )
+# -------------------------------------

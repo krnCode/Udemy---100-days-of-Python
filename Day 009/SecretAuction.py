@@ -25,7 +25,9 @@ def winning_bid():
         else:
             max_value = max_value
 
-    print(f"The winner is {max_bidder['Bidder Name']} with a bid of ${max_bidder['Bid Value']}")
+    print(
+        f"The winner is {max_bidder['Bidder Name']} with a bid of ${max_bidder['Bid Value']}"
+    )
 
 
 while auction:
@@ -39,4 +41,3 @@ while auction:
     if more_bidders != "yes":
         winning_bid()
         auction = False
-
