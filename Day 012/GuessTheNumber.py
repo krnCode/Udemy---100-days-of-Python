@@ -6,50 +6,63 @@ print(logo)
 HARD_MODE = 5
 EASY_MODE = 10
 PLAYER_GUESS = []
+IS_GAME_OVER = False
+DIFFICULTY_SELECTION = EASY_MODE
 
-
-def cpu_number():
-    cpu_choice = random.choice(range(1, 100))
-    return cpu_choice
-    print(f"CPU number: {cpu_choice}")  # test
+cpu_choice = random.choice(range(1, 100))
+print(f"The number is: {cpu_choice}")  # test
 
 
 def difficulty_setting():
-    difficulty_selection = input(
+    """Defines the difficulty setting for the game based on player input."""
+    player_selection = input(
         "Select a difficulty. \nEasy gives you 10 chances, and hard give you 5 chances.\nPress 'e' for easy and 'h' for hard: "
     )
 
-    if difficulty_setting == "e":
-        chances = EASY_MODE
+    if player_selection == "e":
+        DIFFICULTY_SELECTION = EASY_MODE
 
-    elif difficulty_setting == "h":
-        chances = HARD_MODE
+    else:
+        DIFFICULTY_SELECTION = HARD_MODE
 
 
-def player_number():
-    player_choice = int(input("Choose a number between 1 to 100: "))
+def display():
+    for _ in range(DIFFICULTY_SELECTION):
+        PLAYER_GUESS.append("_")
 
-    if player_choice == cpu_number():
-        print(
-            f"You guessed right! Your number: {player_choice} - CPU number: {cpu_number()}.\nYou win!"
-        )
-
-    elif player_choice > cpu_number():
-        print(f"The number is LOWER. Try again.")
-
-    elif player_choice < cpu_number():
-        print(f"The number is HIGHER. Try again.")
+    if player_choice != cpu_choice:
+        print(f"Wrong guesses: {', '.join(PLAYER_GUESS) }")
 
 
 def compare_numbers():
-    pass
+    """Compare the CPU and Player numbers and give hints."""
+    if player_choice == cpu_number():
+        print(
+            f"You guessed right! Your number: {player_choice} - CPU number: {cpu_choice}.\nYou win!"
+        )
+
+    elif player_choice > cpu_choice:
+        print(f"The number is LOWER. Try again.")
+
+    elif player_choice < cpu_choice:
+        print(f"The number is HIGHER. Try again.")
 
 
-start_game = input(
-    "Do you want to play a game of Guess the Number? Type 'y' for yes or 'n' for no: "
-)
+def game_start():
+    """Asks Player if they want to play. If they type Y, the game starts, if they type N, the game ends."""
+    start_game = input(
+        "Do you want to play a game of Guess the Number? Type 'y' for yes or 'n' for no: "
+    )
+
+    if start_game == "n":
+        print("Game Over.")
+        IS_GAME_OVER = True
+
+    elif start_game == "y":
+        pass  # include the start of the game here
 
 
+# game_start()
 difficulty_setting()
-cpu_number()
-player_number()
+player_choice = int(input("Choose a number between 1 to 100: "))
+compare_numbers()
